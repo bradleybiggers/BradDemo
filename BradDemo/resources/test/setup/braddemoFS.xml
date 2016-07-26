@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webMethodsTestSuite description="BradDemoFS test suite" name="braddemoFS test suite">
+    <webMethodsTestCase description="braddemoFS success with Results" name="BraddemoFS success with Results">
+        <service folder="BradDemoFolder" name="BradDemoFS">
+            <input>
+                <file filename="resources\test\data\BradDemoFSInput"/>
+            </input>
+            <expected>
+                <file filename="resources\test\data\BradDemoFSOutput"/>
+                <field path="result" value="4"/>
+            </expected>
+        </service>
+    </webMethodsTestCase>
+</webMethodsTestSuite>
